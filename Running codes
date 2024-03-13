@@ -1,6 +1,16 @@
 from google.colab import drive
 import os
-# Data directories
-RAW_DATA_DIR=/path/to/dir
-OUTPUT_DATA_DIR=/path/to/dir
-REF_IMG_DIR=/path/to/dir
+
+# Mount Google Drive
+drive.mount('/content/drive')
+
+# Define the root folder in Google Drive
+drive_root = "/content/drive/MyDrive/"
+
+# Define the folder name
+folder_name = "Shivani"
+
+# Define paths for specific directories within "Shivani"
+RAW_DATA_DIR= os.path.join(drive_root, folder_name, "RawData")
+OUTPUT_DATA_DIR= os.path.join(drive_root, folder_name, "OutputData")
+REF_IMG_DIR= os.path.join(drive_root, folder_name, "ReferenceImages"
