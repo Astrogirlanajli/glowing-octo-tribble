@@ -1,0 +1,6 @@
+from google.colab import drive
+import os
+# Data directories
+RAW_DATA_DIR=/path/to/dir
+OUTPUT_DATA_DIR=/path/to/dir
+REF_IMG_DIR=/path/to/dir
