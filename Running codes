@@ -29,3 +29,18 @@ kowalski_pwd=<password>
 # Used by SendToFritz
 FRITZ_TOKEN=<token>
 FRITZ_AUTHID=<id>
+
+
+# To be done!!!
+# Used as default user for ssh/rsyncing in winterdrp/downloader
+SSH_USER=<user>
+
+# Set up emailing
+WATCHDOG_EMAIL = <email_address>
+WATCHDOG_EMAIL_PASSWORD = <password>
+WATCHDOG_EMAIL_RECIPIENTS = <target email address>
+
+# Set maximum number of CPUs to use, with a default of half the available total
+MAX_N_CPU = <integer number of CPUs>
+# Set whether to store images in cache, with a default of true
+USE_WINTER_CACHE = <boolean>
