@@ -3,7 +3,7 @@ Telescope Setup:
 The script starts by defining parameters related to the telescope setup, such as its diameter, focal length, and the size of the CCD (charge-coupled device) sensor.
 Input Image:
 
-It loads an input image of an astronomical object (for example, an image of Jupiter taken by the Hubble Space Telescope).
+It loads an input image of an astronomical object (for example, an image taken by the Telescopes).
 Atmospheric Turbulence Simulation:
 
 The script can simulate atmospheric turbulence effects. Atmospheric turbulence causes random fluctuations in the refractive index of air, which can distort the images formed by telescopes.
