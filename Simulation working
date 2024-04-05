@@ -1,0 +1,20 @@
+Telescope Setup:
+
+The script starts by defining parameters related to the telescope setup, such as its diameter, focal length, and the size of the CCD (charge-coupled device) sensor.
+Input Image:
+
+It loads an input image of an astronomical object (for example, an image of Jupiter taken by the Hubble Space Telescope).
+Atmospheric Turbulence Simulation:
+
+The script can simulate atmospheric turbulence effects. Atmospheric turbulence causes random fluctuations in the refractive index of air, which can distort the images formed by telescopes.
+It calculates the Fried parameter, a measure of atmospheric turbulence, based on parameters like wavelength, seeing conditions, and zenith angle.
+Phase screens are generated to simulate the random variations caused by atmospheric turbulence. These phase screens represent how the turbulence affects the light passing through the atmosphere.
+Image Formation:
+
+The phase screens are used to simulate the complex amplitude of the light passing through the telescope's aperture.
+This complex amplitude is then Fourier transformed to obtain the Point Spread Function (PSF), which describes how a point source appears in the image. Atmospheric turbulence causes the PSF to be broader than it would be in ideal conditions.
+The PSFs are convolved with the input image. This step simulates the blurring effect caused by atmospheric turbulence on the observed image.
+Image Processing:
+
+The convolved images are resampled to match the pixel size of the CCD sensor.
+Interpolation is used to adjust the convolved images onto the CCD grid.
